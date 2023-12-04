@@ -30,6 +30,7 @@ body{
     display: flex;
     margin: auto;
     justify-content: start;
+    color: black;
 }
 
 header{
@@ -51,6 +52,7 @@ header{
     justify-content: center;
     padding: 100px;
     gap: 5px;
+    color: black;
 }
 
 .nav a{
@@ -63,6 +65,10 @@ header{
 
 .SigninAndSignUpBtn{
     padding: 15px;
+    margin: auto;
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
 }
 
 button{
