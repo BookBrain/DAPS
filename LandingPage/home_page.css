@@ -86,6 +86,10 @@ footer {
     margin-bottom: 5px;
 }
 
+#books{
+    color: black;
+}
+
 #book-details {
     background-color: #fff;
     border: 1px solid #ddd;
