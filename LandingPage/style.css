@@ -1,0 +1,73 @@
+body{
+    background: black;
+}
+
+.mainContainer{
+    background-image: url('./assets/books-2596809_1280.jpg');
+    height: 1000px;
+}
+
+.heroImage{
+    height: 300px;
+    width: 300px;
+}
+
+.subContainer{
+     background-color: aliceblue;
+     height: 500px;
+     width: 700px;
+     margin: auto;
+     justify-content: center;
+     border-radius: 1rem;
+}
+
+.logo{
+    height: 30px;
+    padding: 8px;
+}
+
+.logoAndTitle{
+    display: flex;
+    margin: auto;
+    justify-content: start;
+}
+
+header{
+    display: flex;
+    margin: auto;
+}
+
+.nav{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    font-size: small;
+    height: 40px;
+}
+
+.HeroSection{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 100px;
+    gap: 5px;
+}
+
+.nav a{
+    color:  white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+
+.SigninAndSignUpBtn{
+    padding: 15px;
+}
+
+button{
+    background-color: gray;
+    color: aliceblue;
+    border-radius: 1rem;
+    height: 30px;
+}
