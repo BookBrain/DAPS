@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Book Inventory - Homepage</title>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Welcome to Our Book Inventory</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured-books">Featured Books</a></li>
+                <li><a href="#book-categories">Book Categories</a></li>
+                <li><a href="#search-functionality">Search</a></li>
+                <li><a href="#user-profile">User Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="book-categories">
+            <h2>Book Categories</h2>
+            <ul><b>
+                <li><a href="#fiction">Fiction</a></li>
+                <li><a href="#non-fiction">Non-Fiction</a></li>
+                <li><a href="#mystery">Mystery</a></li>
+                <li><a href="#science-fiction">Science Fiction</a></li>
+                <li><a href="#Drama or Play">Drama or Play</a></li>
+                <li><a href="#Poetry">Poetry</a></li>
+            </ul></b>
+        </section>
+        <section id="add-book">
+            <h2>Add a New Book</h2>
+            <form id="add-book-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" required>
+
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <button id="show-book-list-button">Show Book List</button>
+        <div id="book-list-popup">
+            <h2>Book List</h2>
+            <div id="book-list"></div>
+            <button id="close-popup-button">Close</button>
+        </div>
+        <section id="featured-books">
+            <h2>Featured Books</h2>
+            <div class="books">
+                <div class="book-card">
+                    <img src="images/hades.jpg" alt="Book Cover">
+                    <h3>House of Hades</h3>
+                    <p>Author: Rick Riordan</p>
+                    <p>Genre: Juvenile Fiction</p>
+                </div>
+                <div class="book-card">
+                    <img src="images/Lucia.jpg" alt="Book Cover">
+                    <h3>House of Hades</h3>
+                    <p>Author: Rick Riordan</p>
+                    <p>Genre: Juvenile Fiction</p>
+                </div>
+            </div>
+            <div class="books">
+                <div class="book-card">
+                    <img src="images/hades.jpg" alt="Book Cover">
+                    <h3>House of Hades</h3>
+                    <p>Author: Rick Riordan</p>
+                    <p>Genre: Juvenile Fiction</p>
+                </div>
+                <div class="book-card">
+                    <img src="images/hades.jpg" alt="Book Cover">
+                    <h3>Lucia in London</h3>
+                    <p>Author: E. F. Benson</p>
+                    <p>Genre: Fiction</p>
+                </div>
+            </div>
+            <div class="books">
+                <div class="book-card">
+                    <img src="images/nancy.jpg" alt="Book Cover">
+                    <h3>Nancy Drew Files Collectors Edition</h3>
+                    <p>Author: Carolyn Keene</p>
+                    <p>Genre: Adult</p>
+                </div>
+                <div class="book-card">
+                    <img src="images/readPeople.jpg" alt="Book Cover">
+                    <h3>Read People like a Book</h3>
+                    <p>Author: Patrick King</p>
+                    <p>Genre: Psychology</p>
+                </div>
+            </div>            
+        </section>
+        <section id="search-functionality">
+            <h2>Search Functionality</h2>
+            <form id="search-form">
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" placeholder="Enter keywords...">
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results-container"></div>
+        </section>
+
+        <button id="show-profile-btn">Show User Profile</button>
+        <section id="user-profile" class="popup">
+            <div id="user-details">
+                <p>Welcome, User!</p>
+                <p>Favorite Books:</p>
+                <ul>
+                    <li>Favorite Book 1</li>
+                    <li>Favorite Book 2</li>
+                </ul>
+            </div>
+        <button id="close-profile-btn">Close</button>
+        </section>
+
+
+        <section id="book-details">
+            <h2>Book Details</h2>
+            <div id="selected-book-details">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Book Inventory</p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
