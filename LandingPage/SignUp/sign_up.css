@@ -2,6 +2,18 @@ body{
     background: rgb(70, 50, 50);
 }
 
+.logoAndTitle{
+    display: flex;
+    margin: auto;
+    justify-content: start;
+    color: black;
+}
+
+.logo{
+    height: 30px;
+    padding: 8px;
+}
+
 .mainContainer{
     background: whitesmoke;
     height: 300px;

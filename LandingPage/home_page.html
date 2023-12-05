@@ -9,8 +9,11 @@
 <body>
 
     <header>
-        <h1>Welcome to Our Book Inventory</h1>
-        <nav>
+        <div class="logoAndTitle">
+            <img class="logo" src="./assets/books-stack-three_29302(1).png" alt="">
+            <p>BookBrain</p>
+        </div>
+        <nav class="nav">
             <ul>
                 <li><a href="#featured-books">Featured Books</a></li>
                 <li><a href="#book-categories">Book Categories</a></li>
@@ -20,17 +23,17 @@
         </nav>
     </header>
     <main>
-        <section id="book-categories">
+        <div id="book-categories">
             <h2>Book Categories</h2>
-            <ul><b>
-                <li><a href="#fiction">Fiction</a></li>
-                <li><a href="#non-fiction">Non-Fiction</a></li>
-                <li><a href="#mystery">Mystery</a></li>
-                <li><a href="#science-fiction">Science Fiction</a></li>
-                <li><a href="#Drama or Play">Drama or Play</a></li>
-                <li><a href="#Poetry">Poetry</a></li>
-            </ul></b>
-        </section>
+            <div class="ul">
+                <li class="li"><a href="#fiction" class="a">Fiction</a></li>
+                <li  class="li"><a href="#non-fiction">Non-Fiction</a></li>
+                <li  class="li"><a href="#mystery">Mystery</a></li>
+                <li  class="li"><a href="#science-fiction">Science Fiction</a></li>
+                <li class="li"><a href="#Drama or Play">Drama or Play</a></li>
+                <li class="li"><a href="#Poetry">Poetry</a></li>
+            </div>
+        </div>
         <section id="add-book">
             <h2>Add a New Book</h2>
             <form id="add-book-form">
@@ -130,7 +133,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Book Inventory</p>
+        <p>&copy; 2023 BookBrain</p>
     </footer>
 
     <script src="home_page.js"></script>
