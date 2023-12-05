@@ -9,22 +9,13 @@
 <body>
     <div class="mainContainer">
         <h2>Welcome Back</h2>
-        <form id="form" method="post">
         <div class="sub_section">
-            <label for="Username">
-                Username:
-                <input type="text" name="username" id="username" placeholder="Enter Your Username">
-            </label>
-            <label for="password">
-                Password:
-                <input type="text" name="password" id="password" placeholder="Enter Your Password">
-            </label>
+            <div class="username"><p>Username</p><input type="text" placeholder="Username" id="username" name="username"></div>
+            <div class="password"><p>Password</p><input type="text" placeholder="Password" id="password" name="password"></div>
         </div>
-        </form>
-        <form id="loginForm">
-            <button type="button" onclick="submitForm()" class="btn">Submit</button>
-        </form>
+
+        <a href="/LandingPage/home_page.html" class="btn">Submit</a>
+
     </div>
-    <script src="sign_in.js"></script>
-    </body>
+</body>
 </html>
