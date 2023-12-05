@@ -10,7 +10,7 @@ function submitForm() {
         password: password
     };
 
-    axios.post('http://localhost:8080/api/v1/book/register', {
+    axios.post('https://f2de-62-173-45-70.ngrok-free.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
