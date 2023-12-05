@@ -60,7 +60,7 @@ function displayBookList() {
 
     window.bookInventory.forEach((book, index) => {
         const listItem = document.createElement('li');
-        listItem.textContent = ${book.title} by ${book.author};
+        listItem.textContent = `${book.title} by ${book.author}`;
         listItem.classList.add('book-list-item');
 
         listItem.addEventListener('click', () => showBookDetails(index));
