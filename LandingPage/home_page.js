@@ -101,29 +101,10 @@ function displaySearchResults(results) {
             const resultItem = document.createElement('div');
             resultItem.classList.add('search-result');
             resultItem.innerHTML = `<h3>${book.title}</h3><p>${book.author}</p>`;
-            // Add more details as needed
 
             searchResultsContainer.appendChild(resultItem);
         });
     }
-}
-
-function displayRecommendedBooks(books) {
-    const recommendedBooksContainer = document.getElementById('recommended-books-container');
-    recommendedBooksContainer.innerHTML = '';
-
-    books.forEach(book => {
-        const bookCard = document.createElement('div');
-        bookCard.classList.add('book-card');
-        bookCard.innerHTML = `
-            <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg" alt="Book Cover">
-            <h3>${book.title}</h3>
-            <p>Author: ${book.author_name ? book.author_name.join(', ') : 'Unknown'}</p>
-            <p>Genre: ${book.subject ? book.subject.join(', ') : 'Unknown'}</p>
-            <!-- Add more details or buttons as needed -->
-        `;
-        recommendedBooksContainer.appendChild(bookCard);
-    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -180,6 +161,14 @@ document.addEventListener('DOMContentLoaded', function () {
         authorInput.value = '';
         genreInput.value = '';
     }
+
+
+
+
+
+
+
+
 
     function addBookToList(title, author, genre) {
         const bookListContainer = document.getElementById('book-list');
