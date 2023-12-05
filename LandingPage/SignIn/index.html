@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>SignIn</title>
+    <script src="node.js" defer></script>
 </head>
 <body>
     <div class="mainContainer">
         <h2>Welcome Back</h2>
         <div class="sub_section">
-            <div class="username"><p>Username</p><input type="text" placeholder="Username"></div>
-            <div class="password"><p>Password</p><input type="text" placeholder="Password"></div>
+            <div class="username"><p>Username</p><input type="text" id="username" placeholder="Username"></div>
+            <div class="password"><p>Password</p><input type="text" id="password" placeholder="Password"></div>
         </div>
 
-        <button class="btn">Submit</button>
+        <button class="btn" id="btn"
+         >Submit</button>
 
     </div>
 </body>
