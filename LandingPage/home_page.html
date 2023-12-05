@@ -16,24 +16,23 @@
         <nav class="nav">
             <ul>
                 <li><a href="#featured-books">Featured Books</a></li>
-                <li><a href="#book-categories">Book Categories</a></li>
                 <li><a href="#search-functionality">Search</a></li>
-                <li><a href="#user-profile">User Profile</a></li>
+                <div class="dropdown">
+                <li><a href="#Books Category">Books Category</a></li>
+                <div class="dropdown-content" id="bookCategories">
+                    <a href="#fiction">Fiction</a>
+                    <a href="#non-fiction">Non-Fiction</a>
+                    <a href="#mystery">Mystery</a>
+                    <a href="#science-fiction">Science Fiction</a>
+                    <a href="#drama-or-play">Drama or Play</a>
+                    <a href="#poetry">Poetry</a>
+                </div>
+                </div>
+                <button id="show-book-list-button">Show Book List</button>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="book-categories">
-            <h2>Book Categories</h2>
-            <div class="ul">
-                <li class="li"><a href="#fiction" class="a">Fiction</a></li>
-                <li  class="li"><a href="#non-fiction">Non-Fiction</a></li>
-                <li  class="li"><a href="#mystery">Mystery</a></li>
-                <li  class="li"><a href="#science-fiction">Science Fiction</a></li>
-                <li class="li"><a href="#Drama or Play">Drama or Play</a></li>
-                <li class="li"><a href="#Poetry">Poetry</a></li>
-            </div>
-        </div>
         <section id="add-book">
             <h2>Add a New Book</h2>
             <form id="add-book-form">
@@ -49,7 +48,6 @@
                 <button type="submit">Add Book</button>
             </form>
         </section>
-        <button id="show-book-list-button">Show Book List</button>
         <div id="book-list-popup">
             <h2>Book List</h2>
             <div id="book-list"></div>

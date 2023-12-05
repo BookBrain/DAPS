@@ -9,7 +9,7 @@ function submitForm() {
         password: password
     };
 
-    fetch('https://f2de-62-173-45-70.ngrok-free.app', {
+    fetch('https://f2de-62-173-45-70.ngrok-free.app/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
