@@ -21,6 +21,7 @@ body{
     margin: auto;
     justify-content: center;
     margin-top: 70px;
+    color: black;
 }
 
 .sub_section{
@@ -41,6 +42,11 @@ body{
     border: 2px solid rgb(63, 44, 44);
     /* border-radius: 1rem; */
     background: rgb(133, 102, 102);
-    color: white;
+    /* color: white; */
+    margin-top:-20px;
+    /* margin-top: 10px; */
 }
 
+.sub_section{
+    margin-top: -20px;
+}
